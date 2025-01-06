@@ -33,7 +33,7 @@ RUN apt update && apt upgrade -y && \
     ros-${ROS_DISTRO}-joint-state-publisher-gui \
     ros-${ROS_DISTRO}-twist-mux \
     
-    ros-${ROS_DISTRODISTRO}-teleop-twist-joy \
+    ros-${ROS_DISTRO}-teleop-twist-joy \
     ros-${ROS_DISTRO}-joy \
     
     
@@ -49,8 +49,8 @@ RUN apt update && apt upgrade -y && \
 RUN groupadd -f video && usermod --append --groups video $USERNAME
 
 # Configure git
-RUN git config --global user.email "oyvind@dgb.no" && \
-    git config --global user.name "oyvlind"
+##-RUN git config --global user.email "oyvind@dgb.no" && \
+##-    git config --global user.name "oyvlind"
 
 # Source ROS setup
 RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> /etc/bash.bashrc

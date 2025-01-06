@@ -18,10 +18,12 @@
                 "twxs.cmake",
                 "donjayamanne.python-extension-pack",
                 "eamodio.gitlens",
-                "ms-iot.vscode-ros"
+                "ms-iot.vscode-ros",
+                "GitHub.vscode-pull-request-github"
             ]
         }
     },
+
     "containerEnv": {
         "DISPLAY": "unix:1",
         "ROS_AUTOMATIC_DISCOVERY_RANGE": "LOCALHOST",
@@ -40,7 +42,9 @@
        "source=/home/ol/jazzy,target=/ws,type=bind,consistency=cached" // source=/<path to local directry on host computer>
     ],
     
-    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R $(whoami) /home/ws/",
+    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R $(whoami) /home/ws/ && bash -c 'set -a && source /ws/.config/user_config && git config --global user.name \"$GIT_USER_NAME\" && git config --global user.email \"$GIT_USER_EMAIL\"'",
+
     "postStartCommand": "sudo rosdep fix-permissions && rosdep update && sudo chown -R $(whoami) /home/ws/ && echo 'Post-start setup complete!'"
 
+    
 }
