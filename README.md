@@ -20,10 +20,10 @@ Build Docker container on the now running image.
 ## 2 User configuration files
 In workspace directory add folder *.config*, containing *user_config* (no file extention)
 **user_config file should contain the follwoing:** 
-`USERNAME=<"your-host-computers-username"> // use ${whoami} in terminal if you are unsure.
-GIT_USER_NAME=<"github username">
-GIT_USER_EMAIL=<"github user email">
-WORKSPACE_PATH=<"local path to workspace directory>"`
+`USERNAME=<"your-host-computers-username"> `  use  `${whoami} in terminal if you are unsure of username format.`
+`GIT_USER_NAME=<"github username">`    example username format: `"opensourceror"`
+`GIT_USER_EMAIL=<"github user email">` example:`"opensourceror@closed.com"`
+`WORKSPACE_PATH=<"local path to workspace directory>"` example `"/home/sourceror/jazzy_workspace"`
 
 *The userconfig files are launched from the **devcontainer.json** "postCreateCommand"*
 
