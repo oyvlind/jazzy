@@ -1,0 +1,7 @@
+Source Terminal: 
+source /opt/ros/$ROS_DISTRO/setup.bash
+
+colcon build --symlink-install
+
+GAZEBO: 
+gz sim
