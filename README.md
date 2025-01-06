@@ -23,6 +23,8 @@ In workspace directory add folder *.config*, containing *user_config* (no file e
 `GIT_USER_EMAIL=<"github user email">` example:`"opensourceror@closed.com"`  
 `WORKSPACE_PATH=<"local path to workspace directory>"` example `"/home/sourceror/jazzy_workspace"`  
 
-*The userconfig files are launched from the **devcontainer.json** "postCreateCommand"*
+*At the moment the userconfig files are launched from the **devcontainer.json** "postCreateCommand"*
+Not fully functioning yet, so please search for capital letters: **REPLACE**, to find elements you need to replace with your own.
 
 ## Network-setup
+Soon to come.
