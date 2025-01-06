@@ -1,7 +1,12 @@
 Source Terminal: 
 source /opt/ros/$ROS_DISTRO/setup.bash
+source /opt/ros/jazzy/setup.bash
 
 colcon build --symlink-install
+
+Run package node:
+ros2 run my_package my_node
+ros2 run seer_bot sample_node
 
 GAZEBO: 
 gz sim
