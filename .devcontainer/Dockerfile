@@ -48,9 +48,6 @@ RUN apt update && apt upgrade -y && \
 # Add user to video group
 RUN groupadd -f video && usermod --append --groups video $USERNAME
 
-# Configure git
-##-RUN git config --global user.email "oyvind@dgb.no" && \
-##-    git config --global user.name "oyvlind"
 
 # Source ROS setup
 RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> /etc/bash.bashrc

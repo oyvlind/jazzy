@@ -1,11 +1,11 @@
-{
+{   
     "name": "ROS 2 Development Container",
     "privileged": true,
-    "remoteUser": "ol", // replace with YOUR_USERNAME
+    "remoteUser": "ol", // REPLACE with YOUR_USERNAME
     "build": {
         "dockerfile": "Dockerfile",
         "args": {
-            "USERNAME": "ol" // replace with YOUR_USERNAME
+            "USERNAME": "ol" // REPLACE with YOUR_USERNAME
         }
     },
     "workspaceFolder": "/home/ws",
@@ -39,7 +39,7 @@
     ],
 
     "mounts": [
-       "source=/home/ol/jazzy,target=/ws,type=bind,consistency=cached" // source=/<path to local directry on host computer>
+       "source=/home/ol/jazzy,target=/ws,type=bind,consistency=cached" // REPLACE source=/<path to local directry on host computer>
     ],
     
     "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R $(whoami) /home/ws/ && bash -c 'set -a && source /ws/.config/user_config && git config --global user.name \"$GIT_USER_NAME\" && git config --global user.email \"$GIT_USER_EMAIL\"'",
