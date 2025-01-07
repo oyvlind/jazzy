@@ -4,9 +4,12 @@ source /opt/ros/jazzy/setup.bash
 
 colcon build --symlink-install
 
+source install/local_setup.bash
+
 Run package node:
 ros2 run my_package my_node
-ros2 run seer_bot sample_node
+ros2 run seer_package test_node
 
 GAZEBO: 
 gz sim
+
