@@ -42,7 +42,7 @@
        "source=/home/ol/jazzy,target=/ws,type=bind,consistency=cached" // REPLACE source=/<path to local directry on host computer>
     ],
     
-    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R $(whoami) /home/ws/ && bash -c 'set -a && source /ws/.config/user_config && git config --global user.name \"$GIT_USER_NAME\" && git config --global user.email \"$GIT_USER_EMAIL\"'",
+    "postCreateCommand": "sudo rosdep fix-permissions && rosdep update && rosdep install --from-paths src --ignore-src -y && sudo chown -R $(whoami) /home/ws/ && bash -c 'set -a && source /ws/.config/user_config && git config --global user.name \"$GIT_USER_NAME\" && git config --global user.email \"$GIT_USER_EMAIL\"'",
 
     "postStartCommand": "sudo rosdep fix-permissions && rosdep update && sudo chown -R $(whoami) /home/ws/ && echo 'Post-start setup complete!'"
     

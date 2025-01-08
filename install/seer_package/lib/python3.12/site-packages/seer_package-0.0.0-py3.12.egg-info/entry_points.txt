@@ -1,2 +1,0 @@
-[console_scripts]
-test_node = seer_package.test_node:main

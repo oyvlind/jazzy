@@ -1,0 +1,4 @@
+source;share/seer_diff_drive_robot/local_setup.bash
+source;share/seer_diff_drive_robot/local_setup.dsv
+source;share/seer_diff_drive_robot/local_setup.sh
+source;share/seer_diff_drive_robot/local_setup.zsh

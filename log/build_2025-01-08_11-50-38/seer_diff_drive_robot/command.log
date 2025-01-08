@@ -1,0 +1,6 @@
+Invoking command in '/home/ws/build/seer_diff_drive_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ws/src/seer_diff_drive_robot -DCMAKE_INSTALL_PREFIX=/home/ws/install/seer_diff_drive_robot
+Invoked command in '/home/ws/build/seer_diff_drive_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/ws/src/seer_diff_drive_robot -DCMAKE_INSTALL_PREFIX=/home/ws/install/seer_diff_drive_robot
+Invoking command in '/home/ws/build/seer_diff_drive_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ws/build/seer_diff_drive_robot -- -j16 -l16
+Invoked command in '/home/ws/build/seer_diff_drive_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/ws/build/seer_diff_drive_robot -- -j16 -l16
+Invoking command in '/home/ws/build/seer_diff_drive_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ws/build/seer_diff_drive_robot
+Invoked command in '/home/ws/build/seer_diff_drive_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/ws/build/seer_diff_drive_robot
