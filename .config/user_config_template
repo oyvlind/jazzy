@@ -1,0 +1,15 @@
+# Rename file to "user_config", and place it in directory .config/config
+
+# Git Configuration
+export GIT_USER_NAME="Your GitHub Username"  # Replace with your GitHub username
+export GIT_USER_EMAIL="youremail@example.com"  # Replace with your GitHub email address
+
+# ROS Environment Variables
+export ROS_DOMAIN_ID="42"
+export ROS_AUTOMATIC_DISCOVERY_RANGE="LOCALHOST"
+
+# Display Environment for GUI Applications
+export DISPLAY="unix:1"
+
+# Other Environment Variables (if needed)
+# Add custom environment variables here
